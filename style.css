@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7fc9fa;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+}
+
+.student-name {
+    margin-right: 1rem;
+}
+
+.student-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main {
+    padding: 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.right-container {
+    flex: 1;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.left-container {
+     flex: 1;
+    position: relative;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 1rem;
+    min-height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Adjust as needed */
+}
+
+.e-wallet-wrapper {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    text-align: right;
+}
+
+.e-wallet-wrapper p {
+    margin: 0;
+}
+
+.e-wallet-wrapper p:first-child {
+    font-size: 1.3rem;
+}
+
+.e-balance {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.balance {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.semester-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.semester-details {
+    display: none;
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    margin-top: auto; /* Push footer to the bottom */
+    width: 100%; /* Ensure footer spans the full width */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.footer-details {
+    text-align: center;
+}
+
+.footer-copyright {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo, .footer-details, .footer-copyright {
+        margin-bottom: 1rem;
+    }
+
+    .footer-copyright {
+        text-align: center;
+    }
+}
+
+
+
+
+
+.right-container {
+    background: radial-gradient(circle, #ffffff, #bdd8fe); /* New background color */
+    border-radius: 10px; /* Rounded corners */
+    max-height: 400px; /* Set a max height for scrollability */
+    overflow-y: auto; /* Enable vertical scrolling */
+
+    /* Hide scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.left-container .balance-link,
+.left-container .e-wallet-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+    cursor: pointer; /* Change cursor to pointer */
+    display: inline-block; /* Ensure block-level behavior */
+    pointer-events: auto; /* Enable pointer events for clicks */
+}
+
+
+.right-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.semester-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.semester-item.active {
+    background-color: #f0f0f0;
+}
+
+.semester-item span {
+    flex: 1;
+}
+
+.semester-item i {
+    margin-left: 10px;
+}
+
+.semester-details {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .menu {
+        margin: 1rem 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo, .footer-details, .footer-copyright {
+        margin-bottom: 1rem;
+    }
+}

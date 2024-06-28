@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="image/logo.png" alt="Logo">
+            </div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+            <div class="student-info">
+                <span class="student-name">John Doe</span>
+                <img src="student-photo.jpg" alt="Student Photo" class="student-photo">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="left-container">
+                <h2>Accountability</h2>
+                <div class="balance-wrapper">
+                    <div class="balance-item">
+                        <a href="unpaid-balance-link" class="balance-link">
+                            <p>Unpaid Balance</p>
+                            <p class="balance"><span id="totalBalance">0.00</span></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="e-wallet-wrapper">
+                    <a href="e-wallet-balance-link" class="e-wallet-link">
+                        <p>E-Wallet Balance </p>
+                        <p class="e-balance" id="ewalletBalance">₱0.00</p>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="right-container" id="semesterContainer">
+                <!-- Semester data will be dynamically added here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="image/logo.png" alt="Logo" width="100px" height="100px">
+            </div>
+            
+            <div class="footer-details">
+                <p>123 University Ave, City, State 12345</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@university.edu</p>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>&copy; 2024 University Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
